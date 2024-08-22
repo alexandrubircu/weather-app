@@ -50,7 +50,7 @@ function App() {
     }, 600000);
 
     return () => clearInterval(interval);
-  }, []); 
+  }); 
   
 
   const getWeatherImage = () => {
@@ -75,7 +75,7 @@ function App() {
   }
 
   const onkeypres = (e) =>{
-    if(e.key == 'Enter'){
+    if(e.key === 'Enter'){
       handleSearch();
       setRegion('');
     }
